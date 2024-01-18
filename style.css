@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-bottom: 15px;
+}
+header{
+  background-color: lightsteelblue;
+  text-align: center;
+  font-size: 34px;
+  padding: 30px;
+  margin: 15px;
+}
+
+#todos{
+  padding: 10px;
+}
+
+button{
+  font-size: 10px;
+  margin: 5px;
+  background-color: lightsteelblue;
+  border: 1px solid lightsteelblue;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+button:hover{
+  background-color: white;
+  border: 1px solid lightsteelblue;
+  color: lightsteelblue;
+}

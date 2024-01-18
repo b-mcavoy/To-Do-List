@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+ <!-- type must be "module"-->  
+<!-- <script type="module" src="script.js"></script> -->
+<script type="module" src="script.js"></script>
+
+<script type="module">
+  import {login} from './script.js';
+  window.login = login;
+  let button = document.getElementById('goButton');
+  // button.addEventListener('click', console.log("bmcavoy@stab.orgttt", "123456"));
+</script>
+
+<header>Blair's To-Do List</header>
+
+  <label>Email:</label>
+<input type="text" id="email">
+  <label>Password:</label>
+<input type="text" id="password">
+<button id="goButton" onclick="login(document.getElementById('email').value, document.getElementById('password').value)">Log In</button>
+
+
+  
+</body>
+
+</html>

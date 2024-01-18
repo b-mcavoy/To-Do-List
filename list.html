@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+ <!-- type must be "module"-->  
+<script type="module" src="script.js"></script>
+<script type="module">
+  import {addItem, showItems} from './script.js';
+  window.addItem=addItem;
+  window.showItems=showItems;
+  showItems();
+</script>
+
+<header>Blair's To-Do List</header>
+
+  <label>Add a new item:</label>
+<input type="text" id="newItem">
+<button onclick="addItem(document.getElementById('newItem').value); showItems();">Add Item</button>
+
+  <h4>Items on the list:</h4>
+<div id="todos">
+  
+</div>
+
+<h4>Completed items:</h4>
+<div id="completed">
+  
+</div>
+  
+</body>
+
+</html>
